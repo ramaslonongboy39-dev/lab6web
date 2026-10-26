@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="judul">Belajar JavaScript DOM</h1>
+    <p id="pesan">Halo, selamat belajar JavaScript!</p>
+    <button id="tombolUbah" type="button">Klik Saya</button>
+
+    <p id="teksLatihan">Ini adalah teks untuk latihan mengubah gaya CSS.</p>
+    <button id="tombolHighlight" type="button">Ubah Gaya Teks</button>
+    <button id="tombolUkuran" type="button">Ubah Ukuran Teks</button>
+
+    <label for="inputPesan">Nama:</label>
+    <input type="text" id="inputPesan" placeholder="">
+    <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+
+    <h2>Form Pendaftaran</h2>
+    <form id="formLatihan">
+        <label for="nama">Nama lengkap</label>
+        <input type="text" id="nama" placeholder="">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="">
+
+        <label for="umur">Usia</label>
+        <input type="number" id="umur" placeholder="">
+
+        <button type="submit">Daftar</button>
+    </form>
+    <p id="hasilValidasi"></p>
+
+    <h2>Daftar Tugas</h2>
+    <div>
+        <input type="text" id="inputTugas" placeholder="Tugas baru">
+        <button id="tombolTambah" type="button">Tambah</button>
+    </div>
+    <ul id="daftarTugas"></ul>
+
+    <section class="workshop-card">
+        <h2>Form Pendaftaran Workshop</h2>
+        <p class="deskripsi">Silakan isi data untuk mendaftar workshop.</p>
+
+        <form id="formWorkshop">
+            <label for="namaWorkshop">Nama lengkap:</label>
+            <input type="text" id="namaWorkshop"
+                   placeholder="Masukkan nama lengkap" maxlength="40">
+
+            <p class="info">Jumlah karakter: <span id="hitungNama">0</span>/40</p>
+
+            <label for="emailWorkshop">Email:</label>
+            <input type="text" id="emailWorkshop"
+                   placeholder="contoh@email.com">
+
+            <label for="sesiWorkshop">Pilih sesi workshop:</label>
+            <select id="sesiWorkshop">
+                <option value="">-- Pilih sesi --</option>
+                <option value="Pagi">Pagi</option>
+                <option value="Siang">Siang</option>
+                <option value="Sore">Sore</option>
+            </select>
+
+            <p class="pilihan">Sesi terpilih: <strong id="sesiTerpilih">Belum memilih sesi</strong></p>
+
+            <div class="tombol-workshop">
+                <button type="submit">Daftar</button>
+                <button type="reset" id="tombolReset">Reset</button>
+            </div>
+        </form>
+        <p id="hasilWorkshop" aria-live="polite"></p>
+    </section>
+
+    <h3>Eksperimen Tombol Tampil/Sembunyi</h3>
+    <p id="paragrafSembunyi">
+        Ini adalah paragraf yang bisa disembunyikan dan ditampilkan kembali.
+    </p>
+    <button id="tombolSembunyi" type="button">
+        Sembunyikan/Tampilkan
+    </button>
+
+    <footer>
+        <p>Praktikum 6 - Pemrograman Web</p>
+    </footer>
+</body>
+</html>
